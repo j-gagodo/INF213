@@ -443,3 +443,54 @@ input[type="radio"], input[type="checkbox"] {
     justify-content: center;
     align-items: center;
 }
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-container .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.main-container .logo-text{
+    color: var(--primary-blue);
+    font-size: 1.7rem;
+}
+
+.main-container .message{
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    padding: 40px;
+    background-color: white;
+}
+
+.main-container h1{
+    color: #0f172a;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+
+.main-container button{
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.main-container button:hover{
+    background-color: #1e40af;
+}

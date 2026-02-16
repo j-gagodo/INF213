@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Items | AccessoryPro | Phone & Accessory Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <span class="logo-box">AP</span>
+            <span class="logo-text">ACCESSORYPRO_</span>
+        </div>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="add-item.html" class="active">Add Asset</a>
+            <a href="partners.html">Partners</a>
+        </nav>
+    </header>
+
+    <main class="form-wrapper">
+        <table class="layout-table" style="width: 100%; border: 0;">
+            <tr>
+                <td style="width: 45%; vertical-align: top;">
+                    <div class="visual-side">
+                        <img src="images/Registration Icons Vectors, Photos and PSD files _ Free Download.jpg" 
+                             alt="Advanced Hardware Component" 
+                             class="side-image">
+                        <div class="side-caption">
+                            <h2 class="title-case">Asset Registration</h2>
+                            <p>Registering new accessories into the secure global ledger.</p>
+                        </div>
+                    </div>
+                </td>
+
+                <td style="width: 55%; vertical-align: top; padding-left: 60px;">
+                    <div class="form-container">
+                        <h1 class="title-case" style="margin-top: 0; color: var(--midnight);">Register New Accessories</h1>
+                        <p class="instruction-text">Complete the profile below to initialize real-time tracking.</p>
+
+                        <form action="#" method="POST">
+                            
+                            <div class="field-group">
+                                <label class="label-caps">Accessory Model Name</label>
+                                <input type="text" name="model" placeholder="e.g., Iphone 11 Pro Max" required>
+                            </div>
+                            <div class="field-group">
+                                <label class="label-caps">Serial SKU Number</label>
+                                <input type="text" name="sku" placeholder="e.g., AP-SKU-9901" required>
+                            </div>
+
+                            <div class="field-group">
+                                <label class="label-caps">Condition Status</label>
+                                <div class="horizontal-options">
+                                    <div class="option-item">
+                                        <input type="radio" id="new" name="cond" value="new" checked>
+                                        <label for="new">Brand New</label>
+                                    </div>
+                                    <div class="option-item">
+                                        <input type="radio" id="refurb" name="cond" value="refurb">
+                                        <label for="refurb">Refurbished</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field-group">
+                                <label class="label-caps">Handling Requirements</label>
+                                <div class="horizontal-options">
+                                    <div class="option-item">
+                                        <input type="checkbox" id="f" name="h" value="f">
+                                        <label for="f">Fragile Item</label>
+                                    </div>
+                                    <div class="option-item">
+                                        <input type="checkbox" id="t" name="h" value="t">
+                                        <label for="t">Taxable Asset</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="submit-action button-caps">Add to Inventory</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+</body>
+</html>

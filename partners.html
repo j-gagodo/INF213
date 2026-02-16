@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Partners | AccessoryPro | Global Supplier Network</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        /* Requirement 4: Technical Rollover Logic */
+        function togglePartnerBrand(element, isHover) {
+            if(isHover) {
+                // High-performance color icon
+                element.src = "https://img.icons8.com/color/144/nvidia.png"; 
+            } else {
+                // Professional Slate/Navy icon
+                element.src = "https://img.icons8.com/ios-filled/144/475569/nvidia.png"; 
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <span class="logo-box">AP</span>
+            <span class="logo-text">ACCESSORYPRO_</span>
+        </div>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="add-item.html">Add Asset</a>
+            <a href="partners.html" class="active">Partners</a>
+        </nav>
+    </header>
+
+    <main class="partners-main">
+        <section class="intro-section">
+            <h1 class="title-case">Global Logistic Network</h1>
+            <p class="instruction-text">Strategic alliances with industry leaders ensuring zero-latency accesory procurement.</p>
+        </section>
+
+        <table class="layout-table partner-grid" style="width: 100%; border: 0;">
+            <tr>
+                <td style="width: 33.3%;">
+                    <div class="partner-card">
+                        <img src="https://img.icons8.com/ios-filled/144/475569/nvidia.png" 
+                             id="rolloverLogo" 
+                             alt="Nvidia Partner" 
+                             class="partner-logo-img"
+                             onmouseover="togglePartnerBrand(this, true)" 
+                             onmouseout="togglePartnerBrand(this, false)">
+                        <h4 class="label-caps">Strategic Partner</h4>
+                        <p>High-performance GPU manufacturing and AI hardware solutions.</p>
+                    </div>
+                </td>
+
+                <td style="width: 33.3%;">
+                    <div class="partner-card">
+                        <img src="images/intel.jpg" 
+                             alt="Intel Core Supplier" 
+                             class="partner-logo-img">
+                        <h4 class="label-caps">Core Supplier</h4>
+                        <p>Processing units, chipsets, and enterprise-grade servers.</p>
+                    </div>
+                </td>
+
+                <td style="width: 33.3%;">
+                    <div class="partner-card">
+                        <img src="https://img.icons8.com/color/144/fedex.png" 
+                             alt="Logistics Partner" 
+                             class="partner-logo-img">
+                        <h4 class="label-caps">Global Logistics</h4>
+                        <p>Specialized freight handling and worldwide distribution network.</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="external-resource-box">
+            <h3 class="title-case">Supply Chain Intelligence</h3>
+            <p>Access the global directory for real-time shipping regulations and vendor verification.</p>
+            <br>
+            <a href="https://www.google.com" target="_blank" class="absolute-action-btn button-caps">Search Global Directory (Google)</a>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,445 @@
+/* Core Variables for Brand Identity */
+:root {
+    --primary-blue: #2563eb;
+    --midnight: #0f172a;
+    --slate: #475569;
+    --ice: #f8fafc;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    background-color: var(--ice);
+    color: var(--midnight);
+}
+
+/* Header Styling - Logo Left, Nav Right */
+header {
+    background-color: var(--midnight);
+    display: flex;
+    justify-content: space-between; /* This creates the distance */
+    align-items: center;
+    padding: 1.2rem 8%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-box {
+    background: var(--primary-blue);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-weight: 900;
+}
+
+.logo-text {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    color: white;
+}
+
+/* Layout Table Styles */
+.layout-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 0; /* Requirement 5: Invisible */
+    height: 85vh;
+}
+
+.hero-content {
+    width: 50%;
+    padding-left: 8%;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin: 1.5rem 0;
+}
+
+.highlight { color: var(--primary-blue); }
+
+.badge {
+    background: #dbeafe;
+    color: var(--primary-blue);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Requirement 4: Box Model Implementation */
+.box-model-frame {
+    display: inline-block;
+    background: white;
+    /* Box Model Settings */
+    padding: 20px;              /* Padding */
+    border: 1px solid #e2e8f0;  /* Border */
+    margin: 30px;               /* Margin */
+    /* Positioning & Style */
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.2);
+}
+
+.main-hero-img {
+    width: 500px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block; /* Removes baseline gaps */
+}
+
+.hyper-icon {
+    width: 80px;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hyper-icon:hover {
+    transform: rotate(15deg) scale(1.1);
+}
+
+/* Container Layout */
+.inventory-container {
+    padding: 50px 8%;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+/* Requirement 5: Visible Border Table Styling */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #e2e8f0; /* Visible Border */
+    padding: 16px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #f1f5f9;
+    color: var(--midnight);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* Image Optimization */
+.table-thumb {
+    width: 100px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block; /* Prevents spacing issues */
+    border: 1px solid #ddd;
+}
+
+/* Professional Status Badges */
+.stock-status {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.in-stock { background: #dcfce7; color: #166534; }
+.low-stock { background: #fee2e2; color: #991b1b; }
+
+.add-btn {
+    background: var(--primary-blue);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Layout and Spacing */
+.form-wrapper {
+    padding: 60px 8%;
+    background-color: var(--ice);
+}
+
+.visual-side {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 650px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.side-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Guarantees no alt-text spacing issues */
+}
+
+.side-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 40px;
+    background: linear-gradient(transparent, rgba(15, 23, 42, 0.9));
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Form Styling */
+.form-container {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+}
+
+.field-group {
+    margin-bottom: 25px;
+}
+
+.field-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: var(--midnight);
+}
+
+.field-group input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.field-group input[type="text"]:focus {
+    border-color: var(--primary-blue);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.submit-action {
+    width: 100%;
+    background: var(--primary-blue);
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-action:hover {
+    background: #1e40af;
+    transform: translateY(-2px);
+}
+
+/* Typography Hierarchy */
+.title-case {
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.label-caps {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    color: var(--slate);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.instruction-text {
+    font-size: 0.95rem;
+    color: var(--slate);
+    margin-bottom: 30px;
+}
+
+.button-caps {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+/* Horizontal Option Styling */
+.horizontal-options {
+    display: flex;
+    gap: 25px;
+    padding-top: 5px;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.option-item label {
+    font-size: 0.9rem;
+    color: var(--midnight);
+    font-weight: 500;
+    margin-bottom: 0 !important; /* Ensure vertical alignment */
+    cursor: pointer;
+}
+
+/* Radio/Checkbox Color Sync */
+input[type="radio"], input[type="checkbox"] {
+    accent-color: var(--primary-blue);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Utility for Professional Capitalization */
+.caps {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Horizontal Alignment for Radio and Checkbox Items */
+.horizontal-options {
+    display: flex;
+    gap: 30px; /* Space between the two options */
+    padding-top: 10px;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between the button and its text */
+}
+
+.option-item label {
+    margin-bottom: 0 !important; /* Overrides global label margins */
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.option-item input {
+    cursor: pointer;
+    accent-color: var(--primary-blue); /* Matches branding */
+}
+
+/* Revised Label Styling for Brand Consistency */
+.field-group label.caps {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: var(--midnight);
+    margin-bottom: 12px;
+}
+
+/* Partners Layout */
+.partners-main {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.intro-section {
+    margin-bottom: 50px;
+}
+
+.partner-grid {
+    margin-bottom: 60px;
+}
+
+.partner-card {
+    background: white;
+    padding: 40px 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    margin: 0 10px; /* Spacing between cells via margin */
+}
+
+.partner-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-blue);
+}
+
+.partner-logo, .rollover-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+/* Requirement 3: Absolute Link Button */
+.external-resource-box {
+    background: #f1f5f9;
+    padding: 50px;
+    border-radius: 24px;
+    border: 1px dashed #cbd5e1;
+}
+
+.absolute-action-btn {
+    display: inline-block;
+    background-color: var(--midnight);
+    color: white;
+    padding: 18px 40px;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.absolute-action-btn:hover {
+    background-color: var(--primary-blue);
+}
+
+/* Fix for Image Sizing to prevent Alt-Text flickering */
+.partner-logo-img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 20px;
+    object-fit: contain;
+    /* This ensures the box exists even before image loads */
+    background-color: transparent; 
+}
+
+/* Ensure consistent card heights */
+.partner-card {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

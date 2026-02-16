@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory | AccessoryPro | Phone & Accessory Inventory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <span class="logo-box">AP</span>
+            <span class="logo-text">ACCESSORYPRO_</span>
+        </div>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="inventory.html" class="active">Inventory</a>
+            <a href="add-item.html">Add Asset</a>
+            <a href="partners.html">Partners</a>
+        </nav>
+    </header>
+
+    <main class="inventory-container">
+        <section class="table-header">
+            <div>
+                <h1>Phone & Accessory Inventory</h1>
+                <p>Warehouse Tracking: <span class="text-blue">Sync Active</span></p>
+            </div>
+            <a href="add-item.html" class="add-btn">+ Register New Asset</a>
+        </section>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Product View</th>
+                    <th>Item Description</th>
+                    <th>SKU Number</th>
+                    <th>Availability</th>
+                    <th>Warehouse Bin</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/Apple iPhone 15 Plus Silicone Case with MagSafe - Winter Blue.jpg" alt="iPhone Case" class="table-thumb"></td>
+                    <td><strong>iPhone 15 Pro Case</strong><br><small>Premium Protective Case - Black</small></td>
+                    <td>AP-CASE-IP15</td>
+                    <td><span class="stock-status in-stock">120 Units</span></td>
+                    <td>A-Sector-104</td>
+                </tr>
+                <tr>
+                    <td><img src="images/Apple 20W USB-C Power Adapter - iPhone Charger with Fast Charging Capability, Type C Wall Charger.jpg" alt="Charger" class="table-thumb"></td>
+                    <td><strong>Fast Charging Adapter 20W</strong><br><small>USB-C Wall Charger</small></td>
+                    <td>AP-CHG-20W</td>
+                    <td><span class="stock-status in-stock">85 Units</span></td>
+                    <td>B-Sector-202</td>
+                </tr>
+                <tr>
+                    <td><img src="images/Wireless Earbuds, 2026 Bluetooth 5_4 Earphones In Ear 3D Stereo, Bluetooth Headphones with 4 ENC Noise Cancelling Mic, 40H Deep Bass IP7 Waterproof.jpg" alt="Headphones" class="table-thumb"></td>
+                    <td><strong>Wireless Earbuds Pro</strong><br><small>Bluetooth 5.0 - White</small></td>
+                    <td>AP-EARBUD-W</td>
+                    <td><span class="stock-status low-stock">15 Units</span></td>
+                    <td>C-Sector-101</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+</body>
+</html>
